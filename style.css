@@ -1,0 +1,363 @@
+/* font-family: 'Kumbh Sans', sans-serif; */
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Kumbh Sans', sans-serif;
+    min-height: 100vh;
+    background: linear-gradient(hsl(273, 75%, 66%),hsl(240, 73%, 65%));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    
+}
+
+.wrapper{
+    background: white;
+    border-radius: 30px;
+    width: 920px;
+    height: 500px;
+    display: grid;
+    grid-template-columns: 400px 1fr;
+    grid-gap: 6rem;
+    background-image: url(images/bg-pattern-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: 1260% 65%;
+}
+.answer{
+    display: none;
+
+}
+.accordion__wrapper{
+    margin-top: 70px;
+   
+}
+.accordion_questions{
+    height: 100%;
+    
+}
+
+.question_answer__accordion{
+    width: 350px;
+    border-bottom: 1px solid hsl(240, 5%, 91%);
+}
+.title_accordion{
+    font-size: 2.1em;
+    margin-top: 0px;
+    margin-bottom: 30px;
+}
+.question_title{
+    font-size: 1em;
+    font-weight: 400;
+    margin: 0.7em 0em;
+    color:hsl(238, 29%, 16%)
+}
+.question{
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.question img{
+    align-self: center;
+}
+.image__wrapper{
+    position: relative;
+}
+
+.image__wrapper__inner{
+    background: url(images/illustration-woman-online-desktop.svg);
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: 120% center;
+}
+
+.box{
+    position: absolute;
+    top:41%;
+    left:-25%
+}
+.question_title:hover{
+    color:hsl(14, 88%, 65%)
+}  
+
+
+.active img{
+    transform: rotate(180deg);
+}
+.active .answer {
+    display: block;
+    font-size: 0.97em;
+    padding-bottom: 1.3rem;
+    color: hsl(240, 6%, 50%);
+}
+.active h3{
+    font-weight: 700;
+}
+footer{
+    position:fixed;
+    bottom:0;
+}
+@media only screen and (max-width:1032px){
+   body{
+    padding-right: 500px;
+    padding-left: 500px;
+    padding-top: 50px;
+    
+   }
+   .wrapper{
+    width: 880px;
+    margin-bottom: 70px;
+    background-image: url(images/bg-pattern-desktop.svg);
+    background-repeat: no-repeat;
+    background-position:680% 64%;
+
+   }
+
+}
+@media only screen and (max-width:735px){
+    body{
+  
+     padding-top: 180px;
+     padding-bottom: 20px;
+     padding-right:100px ;
+     padding-left:100px ;
+     text-align: center;
+    }
+    .wrapper{
+     width: 430px;
+     grid-template-columns: 1fr;
+     padding-right: 20px;
+     padding-left: 40px;
+ 
+    }
+    .image__wrapper__inner{
+    
+        background: url(images/illustration-woman-online-mobile.svg);
+        height: 400%;
+        width: 100%;
+        background-repeat: no-repeat;
+        position: absolute;
+        top:-235%;
+        left:10%
+ 
+    }
+    .accordion__wrapper{
+        margin-top: 0px;
+       
+    }
+    .box{
+        display: none;
+    }
+ 
+ }
+ @media only screen and (max-width:570px){
+    body{
+  
+     padding-top: 180px;
+     padding-bottom: 20px;
+     padding-right:50px ;
+     padding-left:50px ;
+     text-align: center;
+    }
+    .wrapper{
+     width: 300px;
+     grid-template-columns: 1fr;
+     padding-right: 20px;
+     padding-left: 40px;
+     font-size: 0.7em;
+ 
+    }
+    .image__wrapper__inner{
+    
+        background: url(images/illustration-woman-online-mobile.svg);
+        height: 400%;
+        width: 100%;
+        background-repeat: no-repeat;
+        position: absolute;
+        top:-65%;
+        left:-3%
+ 
+    }
+    .question_answer__accordion{
+        width: 230px;
+        border-bottom: 1px solid hsl(240, 5%, 91%);
+    }
+    .accordion__wrapper{
+        margin-top: 0px;
+       
+    }
+    .title_accordion{
+        font-size: 2.1em;
+        margin-top: -145px;
+        margin-bottom: 30px;
+    }
+    .box{
+        display: none;
+    }
+ 
+ }
+
+@media only screen and (max-width:375px){
+    body{
+     padding-right: 250px;
+     padding-left: 250px;
+     padding-top: 180px;
+     padding-bottom: 20px;
+     text-align: center;
+    }
+    .wrapper{
+     width: 400px;
+     grid-template-columns: 1fr;
+ 
+    }
+    
+    .image__wrapper__inner{
+    
+        background: url(images/illustration-woman-online-mobile.svg);
+        height: 400%;
+        width: 100%;
+        background-repeat: no-repeat;
+        position: absolute;
+        top:-92%;
+        left:-1%
+    }
+    .accordion__wrapper{
+        margin-top: 0px;
+       
+    }
+    .question_answer__accordion{
+        width: 300px;
+        border-bottom: 1px solid hsl(240, 5%, 91%);
+    }
+    .box{
+        display: none;
+    }
+ 
+ }
+ 
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: 'Kumbh Sans', sans-serif;
+    position: relative;
+    background:linear-gradient( hsl(273, 75%, 66%),hsl(240, 73%, 65%));
+    
+    
+
+}
+
+.container{
+    
+    max-width: 1000px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-radius: 15px;
+    background-image: url(images/bg-pattern-desktop.svg);
+    background-color: white;
+    background-position:-394% 130%;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    padding-bottom: 50px;
+    
+}
+.woman{
+    max-width: 100%;
+    object-fit: cover;
+    margin-top: 100px;
+    margin-left: -65px;
+   
+    
+    
+}
+
+
+h1{
+    margin-bottom: 18px;
+    margin-top: 66px;
+    
+}
+h2{
+    font-weight: 400;
+    font-size: 1em;
+    color:  hsl(238, 29%, 16%);
+    cursor: pointer;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    
+    
+}
+
+p{
+    color: hsl(240, 6%, 50%);
+    font-size: 0.9em;
+    margin-bottom: 15px;
+}
+.content{
+    padding:20px 120px 30px 0;
+    width: 500px;
+}
+
+.box{
+    position:absolute;
+    top:234px;
+    left:185px
+}
+
+
+.question{
+    display: flex;
+    justify-content: space-between;
+}
+.question img{
+    width: 10px;
+    height: 8px;
+    margin-top: 23px;
+    cursor: pointer;
+    
+}
+
+h2:hover{
+    color:hsl(14, 88%, 65%);
+}
+.line{
+    border-bottom:1px solid hsl(240, 5%, 91%);
+  
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+} */
